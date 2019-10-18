@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алексей Кузьменя](https://up.htmlacademy.ru/htmlcss/26/user/1106325).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
