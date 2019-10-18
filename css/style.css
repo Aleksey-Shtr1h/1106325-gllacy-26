@@ -236,10 +236,10 @@ input[type="radio"].visually-hidden {
 .menu-catalog-list:before {
   content: "";
   display: block;
-  
+
   position: absolute;
   top: -20px;
-  
+
   height: 20px;
   width: 100%;
 
@@ -372,7 +372,7 @@ input[type="radio"].visually-hidden {
 .main-search::before {
   content: "";
   display: block;
-  
+
   position: absolute;
   top: -6px;
 
@@ -399,37 +399,3 @@ input[type="radio"].visually-hidden {
 .qqq {
   align-self: stretch;
 }
-
-/*.navigation-user-item:hover > .menu-catalog-list {
-  display: block;
-
-  background-color: #f8f7f4;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-}*/
-
-
-/*display: none;
-
-  position: absolute;
-
-  min-width: 142px;
-  top: 100%;
-  left: -8px;
-
-  margin-top: 6px;
-
-  border-radius: 5px;
-}
-
-.menu-catalog-list:before {
-  content: "";
-  display: block;
-  
-  position: absolute;
-  top: -20px;
-  
-  height: 20px;
-  width: 100%;
-
-  opacity: 0;
-}*/
