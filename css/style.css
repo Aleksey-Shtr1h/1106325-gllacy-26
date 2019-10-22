@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
   background-color: #849d8f;
   background-image: url(../img/background_slider_1.png);
   background-repeat: no-repeat;
-  background-position: 50% 55%;
+  background-position: 468px 83px;
 
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -125,6 +125,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   padding-top: 272px;
+  margin-bottom: 41px;
 
   text-align: center;
   color: #ffffff;
@@ -158,12 +159,12 @@ input[type="radio"].visually-hidden {
   line-height: 41px;
 }
 
-.main-slider-btn:hover {
+.main-btn:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.main-slider-btn:active {
+.main-btn:active {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -512,25 +513,28 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.3px;
 }
 
+.banners {
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
 .banners-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  margin-top: 10px;
 }
 
 .banners-item:nth-child(1) {
   background-image: url(../img/banner-1.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -50px -95px;
 }
 
 .banners-item:nth-child(2) {
   background-image: url(../img/banner-2.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -220px -104px;
 }
 
 .banners-item {
@@ -540,21 +544,285 @@ input[type="radio"].visually-hidden {
   width: 560px;
   color: #fff;
 
-  border-radius: 5px;
+  border-radius: 15px;
+  padding-bottom: 25px;
 }
 
 .banner-title {
   font-size: 35px;
   font-weight: 800;
   line-height: 41px;
+
+  padding-top: 16px;
+  padding-bottom: 14px;
+  padding-left: 18px;
 }
 
 .banner-text {
+  width: 535px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
+  word-break: break-all;
+
+  padding-bottom: 45px;
+  padding-left: 18px;
 }
 
 .banner-btn {
-  align-self: flex-start;
+  align-self: flex-end;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+
+  margin-right: 22px;
+  padding: 10px 22px;
+}
+
+.products-hit {
+  margin-bottom: 38px;
+}
+
+.products-list-hit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.products-item-hit {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 267px;
+
+  margin-top: 26px;
+  margin-right: 26px;
+
+  color: #fff;
+}
+
+.flag-hit::after {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.products-item-hit:nth-child(1) {
+  background-image: url(../img/product-hit-1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.products-item-hit:nth-child(2) {
+  background-image: url(../img/product-hit-2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.products-item-hit:nth-child(3) {
+  background-image: url(../img/product-hit-3.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.products-item-hit:nth-child(4) {
+  background-image: url(../img/product-hit-4.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.products-item-hit:nth-child(4n) {
+  margin-top: 26px;
+  margin-right: 0;
+}
+
+.products-item-hit:hover::before {
+  content: "";
+  position: absolute;
+
+  top: -2px;
+  left: -12px;
+
+  width: 293px;
+  min-height: 405px;
+
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+  border-radius: 15px;
+}
+
+.product-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 600;
+
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+
+  padding-top: 210px;
+  padding-bottom: 20px;
+}
+
+.product-price::after {
+  content: "/кг";
+  font-size: 30px;
+}
+
+.product-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+.products-item-hit .actions {
+  align-self: center;
+
+  display: none;
+  position: absolute;
+
+  top: 100%;
+}
+
+.products-item-hit:hover .actions {
+  display: block;
+}
+
+.view-btn {
+  display: block;
+  position: relative;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 9px;
+
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.seo-box {
+  color: #000;
+
+  background-image: url(../img/background-wafer.jpg);
+  background-position: 0 0;
+
+  border-radius: 15px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.seo-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+
+  letter-spacing: 0.2px;
+
+  padding-left: 18px;
+}
+
+.seo-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.seo-item {
+  position: relative;
+
+  width: 558px;
+
+  padding-top: 21px;
+  padding-left: 76px;
+}
+
+.seo-item:nth-child(2n+1) {
+  margin-right: 8px;
+}
+
+.seo-item::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 19px;
+
+  width: 50px;
+  height: 50px;
+}
+
+.seo-item:nth-child(1)::before {
+  background-image: url(../img/ice-cream.svg);
+}
+
+.seo-item:nth-child(2)::before {
+  background-image: url(../img/cow.svg);
+}
+
+.seo-item:nth-child(3)::before {
+  background-image: url(../img/eco.svg);
+}
+
+.seo-item:nth-child(4)::before {
+  background-image: url(../img/thermometer.svg);
+}
+
+.seo-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.blog-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog-new {
+  width: 560px;
+
+  background-image: url(../img/background_blog_1.jpg);
+  background-position: center;
+
+  border-radius: 15px;
+
+  height: 300px;
+}
+
+.blog-mailing {
+  width: 560px;
+
+  border: 5px solid #000;
+  border-image: url(../img/bg-post.svg) 7 round;
+  border-radius: 15px;
+
+  /*background-color: red;*/
+
+  height: 300px;
 }
