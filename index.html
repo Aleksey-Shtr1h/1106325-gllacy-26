@@ -73,24 +73,43 @@
           <div class="user-registration">
             <div class="header-search">
               <label for="search" aria-label="Поиск">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#ffffff">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#fff">
                   <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
                 </svg>
               </label>
               <form class="main-search" action="#" name="Поиск" method="post">
-                <input class="search-input" type="search" name="Поиск" id="search" placeholder="Поиск:">
+                <input class="search-input main-input" type="search" name="Поиск" id="search" placeholder="Крем-брюле">
               </form>
             </div>
             <div class="wrap-user-entry">
-              <a class="user-btn" href="#">
-                Вход
-                <svg class="user-btn-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" fill="#000">
-                  <g>
-                    <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-                    <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-                  </g>
-                </svg>
-              </a>
+              <div class="wrap-user-btn">
+                <a class="user-btn" href="#">
+                  Вход
+                  <svg class="user-btn-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" fill="#000">
+                    <g>
+                      <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                      <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                    </g>
+                  </svg>
+                </a>
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label class="visually-hidden" for="user-login">Логин</label>
+                    <input class="input-login-user main-input" id="user-login" type="text" name="login" placeholder="email@example.com" required>
+                  </p>
+                  <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="input-login-password main-input" id="user-password" type="password" name="password" placeholder="••••••••" required>
+                  </p>
+                  <div class="login-entry">
+                    <button class="entry-btn main-btn" type="submit">Войти</button>
+                    <div class="login-help">
+                      <a class="restore main-link" href="#">Забыли пароль?</a>
+                      <a class="new-regestration main-link" href="#">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
               <a class="user-btn" href="#">
                 Пусто
                 <svg class="user-btn-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="#fff">
@@ -246,15 +265,199 @@
           <h2 class="blog-news-title visually-hidden">
             Новости блога
           </h2>
-          <article class="blog-new"></article>
-          <article class="blog-mailing"></article>
+          <article class="blog-new">
+            <p class="blog-new-text">
+              Новое в нашем блоге
+            </p>
+            <a href="#" class="blog-new-link main-link">
+              10 способов сервировки
+              фруктовых щербетов к
+              столу
+            </a>
+          </article>
+          <article class="blog-mailing">
+            <form action="https://echo.htmlacademy.ru" class="blog-mailing-email">
+              <label for="blog-mailing-text" aria-label="Отправить рассылку">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </label>
+              <input class="main-input" id="blog-mailing-text" type="email" name="blog-mailing-text" placeholder="email@example.com">
+              <button class="main-btn mailing-btn" type="submit">
+                Отправить
+              </button>
+            </form>
+          </article>
         </section>
 
       </div>
 
-      <div class="map"></div>
+      <section class="map-index">
+        <h2 class="visually-hidden">Расположение магазина на карте</h2>
+
+        <div class="container">
+          <div class="feedback">
+            <p class="feedback-address-text">
+              Адрес главного офиса
+              и офлайн-магазина:
+            </p>
+            <h3 class="feedback-address-title">
+              ул. Большая Конюшенная 19/8, Санкт-Петербург
+            </h3>
+            <p class="feedback-phone-text">
+              Для заказов по телефону:
+            </p>
+            <a href="tel:88124502525" class="feedback-phone">
+              8 812 450-25-25
+            </a>
+            <p class="feedback-timetable">
+              (с 10 до 20 ежедневно)
+            </p>
+
+            <a href="#" class="main-btn feedback-btn">
+              Форма обратной связи
+            </a>
+          </div>
+        </div>
+        <button class="map-index-btn" type="button"></button>
+      </section>
     </main>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="social-network">
+          <ul>
+            <li class="social-item">
+              <a href="#" class="social-button">
+                <span class="visually-hidden">
+                  Твитер
+                </span>
+                <svg class="social-icon-border" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="#FFF">
+                  <path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-button">
+                <span class="visually-hidden">
+                  Инстаграм
+                </span>
+                <svg class="social-icon-border" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="#FFF">
+                  <g>
+                    <path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/>
+                    <path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/>
+                    <path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-button">
+                <span class="visually-hidden">
+                  Фейсбук
+                </span>
+                <svg class="social-icon-border" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="#FFF">
+                  <path d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-button">
+                <span class="visually-hidden">
+                  Вконтакте
+                </span>
+                <svg class="social-icon-border" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="#FFF">
+                  <g>
+                    <path d="M16.637 14.495c.402-.019.719-.082.951-.188.326-.145.54-.33.641-.559.101-.229.15-.496.15-.797 0-.232-.058-.465-.174-.697-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165a76.242 76.242 0 0 0-1.652-.014h-.339v2.965h.565c.571 0 1.057-.009 1.459-.028zM18.118 17.084c-.282-.081-.672-.125-1.166-.132a127.97 127.97 0 0 0-1.55-.009h-.79v3.493h.264c1.014 0 1.74-.003 2.18-.009a3.2 3.2 0 0 0 1.212-.245c.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.261-1.03-.17-.241-.464-.423-.877-.543z"/>
+                    <path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.531a3.73 3.73 0 0 1-1.124 1.327c-.552.415-1.161.71-1.823.886s-1.501.264-2.519.264h-6.121V8.987h5.443c1.13 0 1.957.038 2.48.113a5.126 5.126 0 0 1 1.561.5c.533.27.929.632 1.189 1.087.26.455.392.975.392 1.558 0 .678-.179 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.559 2.179 1.13.537.571.807 1.325.807 2.261 0 .678-.138 1.283-.411 1.817z"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-menu">
+          <a href="#" class="footer-menu-btn-bold main-link">
+            Для поставщиков
+          </a>
+          <a href="#" class="footer-menu-btn main-link">
+            Наши документы
+          </a>
+          <a href="#" class="footer-menu-btn main-link">
+            О производстве
+          </a>
+          <a href="#" class="footer-menu-btn main-link">
+            Экологические стандарты
+          </a>
+        </div>
+
+        <div class="developer-box">
+          <p class="developer-text">
+            Сделано в
+            <a href="#" class="developer-link">
+              HTML Academy
+            </a>
+            © 2019
+          </p>
+        </div>
+
+      </div>
+    </footer>
   </div>
+
+  <section class="modal modal-write-us">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <p class="write-us-text">
+      Мы обязательно вам ответим!
+    </p>
+    <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+      <div class="wrap-top-write-us">
+        <div class="modal-user-info">
+          <p>
+            <label class="visually-hidden" for="modal-user-login">
+              Ваше имя:
+            </label>
+            <input class="modal-user-login main-input" id="modal-user-login" type="text" name="modal-user-login" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-email">
+              Ваш e-mail:
+            </label>
+            <input class="modal-user-email main-input" id="user-email" type="email" name="modal-user-email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p>
+          <label class="visually-hidden" for="user-text">
+            Текст письма:
+          </label>
+          <textarea name="modal-user-text" id="user-text" cols="30" rows="10" maxlength="999" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+
+      <p>
+        <button class="main-btn write-us-btn" type="submit">
+          Отправить
+        </button>
+      </p>
+
+    </form>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen>
+    </iframe>
+    <p>
+      <img src="img/map_pop_up.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>
