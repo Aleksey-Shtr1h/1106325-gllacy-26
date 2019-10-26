@@ -409,7 +409,7 @@ input[type="radio"].visually-hidden {
   margin-top: 6px;
 
   border-radius: 5px;
-  z-index: 2;
+  z-index: 4;
 }
 
 .menu-catalog-list:before {
@@ -548,7 +548,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 
-  z-index: 2;
+  z-index: 4;
 }
 
 .header-search:hover .main-search {
@@ -669,7 +669,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 
-  z-index: 2;
+  z-index: 4;
 }
 
 .wrap-user-btn:hover .login-form {
@@ -1623,7 +1623,6 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-
 .catalog-name {
   font-size: 35px;
   line-height: 41px;
@@ -1631,8 +1630,123 @@ input[type="radio"].visually-hidden {
 
   color: #fff;
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 27px;
 }
+
+.filter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  width: 880px;
+}
+
+.filter-form fieldset {
+  border: none;
+
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.filter-form legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+
+  color: #fff;
+
+  padding-bottom: 13px;
+  padding-left: 14px;
+}
+
+.sorting-box {
+  position: relative;
+
+  padding-right: 20px;
+}
+
+.sorting-outer-btn {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+
+  color: #fff;
+
+  border-radius: 50px;
+
+  background-color: #a9b9af;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 13px;
+  padding-right: 50px;
+}
+
+.sorting-box:hover .sorting-outer-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.sorting-list {
+  display: none;
+
+  position: absolute;
+
+  width: 192px;
+  top: 100%;
+  left: 0px;
+
+  margin-top: 6px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  background-color: #fff;
+
+  z-index: 4;
+}
+
+.sorting-item--active {
+  background-color: #1e90ff;
+}
+
+.sorting-box:hover .sorting-list {
+  display: block;
+}
+
+.sorting-inner-btn {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: #000;
+
+  padding-left: 18px;
+}
+
+
+
+
+
+
+
+
+
+/*.filter-price {
+  width: 215px;
+}
+
+.filter-fat {
+  width: 415px;
+}
+
+.filter-fillers {
+  width: 705px;
+}*/
+
 /*-----------------------------------------------------------------------*/
 
 

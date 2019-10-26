@@ -207,7 +207,45 @@
           Сливочное мороженое
         </h1>
 
-        section.filter-section>fieldset.sorting
+        <section class="filter-section">
+          <h2 class="visually-hidden">Фильтр:</h2>
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="sorting">
+              <legend>Сортировка:</legend>
+              <div class="sorting-box">
+                <a href="#" class="sorting-outer-btn">
+                  по популярности
+                </a>
+                <ul class="sorting-list">
+                  <li class="sorting-item sorting-item--active">
+                    <a href="#" class="sorting-inner-btn">
+                      по популярности
+                    </a>
+                  </li>
+                  <li class="sorting-item">
+                    <a href="#" class="sorting-inner-btn">
+                      сначала недорогие
+                    </a>
+                  </li>
+                  <li class="sorting-item">
+                    <a href="#" class="sorting-inner-btn">
+                      сначала дорогие
+                    </a>
+                  </li>
+                  <li class="sorting-item">
+                    <a href="#" class="sorting-inner-btn">
+                      по жирности
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter-price"></fieldset>
+            <fieldset class="filter-fat"></fieldset>
+            <fieldset class="filter-fillers"></fieldset>
+            <button type="submit"></button>
+          </form>
+        </section>
 
         <section class="products-hit">
           <h2 class="visually-hidden">
