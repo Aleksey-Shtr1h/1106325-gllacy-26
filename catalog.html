@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
+  <title>Глейси:Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -15,56 +15,58 @@
         <div class="container">
           <section class="top-header">
             <h1 class="visually-hidden">Gllacy Shop</h1>
-            <div class="header-logo">
-              <img src="img/logo-gllace.png" alt="logo">
+            <div class="wrap-heder-menu">
+              <div class="header-logo">
+                <img src="img/logo-gllace.png" alt="logo">
+              </div>
+              <nav>
+                <ul class="navigation-user-list">
+                  <li class="navigation-user-item nanavigation-user-item--active">
+                    <a href="catalog.html" class="navigation-user-btn navigation-user-btn--active">
+                      Каталог
+                    </a>
+                    <!-- Выподающее меня -->
+                    <ul class="menu-catalog-list">
+                      <li class="menu-catalog-item">
+                        <a href="#" class="menu-catalog-btn new">
+                          Новинки
+                        </a>
+                      </li>
+                      <li class="menu-catalog-item">
+                        <a href="catalog.html" class="menu-catalog-btn">
+                          Сливочное
+                        </a>
+                      </li>
+                      <li class="menu-catalog-item">
+                        <a href="#" class="menu-catalog-btn">
+                          Щербеты
+                        </a>
+                      </li>
+                      <li class="menu-catalog-item">
+                        <a href="#" class="menu-catalog-btn">
+                          Фруктовый лед
+                        </a>
+                      </li>
+                      <li class="menu-catalog-item">
+                        <a href="#" class="menu-catalog-btn">
+                          Мелорин
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navigation-user-item">
+                    <a href="#" class="navigation-user-btn">
+                      Доставка и оплата
+                    </a>
+                  </li>
+                  <li class="navigation-user-item">
+                    <a href="#" class="navigation-user-btn">
+                      О Компании
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <nav>
-              <ul class="navigation-user-list">
-                <li class="navigation-user-item">
-                  <a href="catalog.html" class="navigation-user-btn">
-                    Каталог
-                  </a>
-                  <!-- Выподающее меня -->
-                  <ul class="menu-catalog-list">
-                    <li class="menu-catalog-item">
-                      <a href="#" class="menu-catalog-btn new">
-                        Новинки
-                      </a>
-                    </li>
-                    <li class="menu-catalog-item">
-                      <a href="#" class="menu-catalog-btn">
-                        Сливочное
-                      </a>
-                    </li>
-                    <li class="menu-catalog-item">
-                      <a href="#" class="menu-catalog-btn">
-                        Щербеты
-                      </a>
-                    </li>
-                    <li class="menu-catalog-item">
-                      <a href="#" class="menu-catalog-btn">
-                        Фруктовый лед
-                      </a>
-                    </li>
-                    <li class="menu-catalog-item">
-                      <a href="#" class="menu-catalog-btn">
-                        Мелорин
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="navigation-user-item">
-                  <a href="#" class="navigation-user-btn">
-                    Доставка и оплата
-                  </a>
-                </li>
-                <li class="navigation-user-item">
-                  <a href="#" class="navigation-user-btn">
-                    О Компании
-                  </a>
-                </li>
-              </ul>
-            </nav>
             <div class="user-registration">
               <div class="header-search">
                 <label for="search" aria-label="Поиск">
@@ -80,13 +82,13 @@
                 <div class="wrap-user-btn">
                   <a class="user-btn" href="#">
                     Вход
-                    <svg class="user-btn-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" fill="#000">
-                      <g>
-                        <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-                        <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-                      </g>
-                    </svg>
                   </a>
+                  <svg class="user-btn-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" fill="#000">
+                    <g>
+                      <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                      <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                    </g>
+                  </svg>
                   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                       <label class="visually-hidden" for="user-login">Логин</label>
@@ -105,16 +107,72 @@
                     </div>
                   </form>
                 </div>
-                <a class="user-btn" href="#">
-                  Пусто
-                  <svg class="user-btn-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="#fff">
-                    <g>
-                      <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
-                      <circle cx="6.984" cy="18" r="2"/>
-                      <circle cx="15.984" cy="18" r="2"/>
-                    </g>
+
+                <div class="wrap-basket-btn">
+                  <a class="basket-btn" href="#">
+                    2 товара
+                  </a>
+                  <svg class="basket-btn-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+                    <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
+                    <circle fill="#343434" cx="6.984" cy="18" r="2"/>
+                    <circle fill="#343434" cx="15.984" cy="18" r="2"/>
+                    <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
                   </svg>
-                </a>
+                  <form class="basket-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="order-box">
+                      <ul class="order-list">
+                        <li class="order-item">
+                          <button class="delete-item-btn" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                            <svg class="delete-item-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="#231F20">
+                              <path d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/>
+                            </svg>
+                          </button>
+                          <img class="order-img" src="img/product-hit-4.png" alt="">
+                          <p class="order-text">
+                            Пломбир с апельсиновым джемом
+                          </p>
+                          <p class="weight-calculation-text">
+                            1,5 кг х 200 руб.
+                          </p>
+                          <p class="count">
+                            300 руб.
+                          </p>
+                        </li>
+                        <li class="order-item">
+                          <button class="delete-item-btn" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                            <svg class="delete-item-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="#231F20">
+                              <path d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/>
+                            </svg>
+                          </button>
+                          <img class="order-img" src="img/product-hit-3.png" alt="">
+                          <p class="order-text">
+                            Клубничный пломбир с присыпкой из белого шоколада
+                          </p>
+                          <p class="weight-calculation-text">
+                            1,5 кг х 300 руб.
+                          </p>
+                          <p class="count">
+                            450 руб.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="wrap-total-price">
+                      <p class="total-price">
+                        Итого:
+                        <span>750 руб.</span>
+                      </p>
+
+                      <button class="order-btn main-btn" type="submit">
+                        Оформить заказ
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+
               </div>
             </div>
           </section>
@@ -153,7 +211,7 @@
             Популярные товары
           </h2>
           <ul class="products-list-hit">
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </p>
@@ -165,7 +223,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-2.png" alt="Сливочно-кофейное с кусочками шоколада">
               </p>
@@ -177,7 +235,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </p>
@@ -189,7 +247,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой">
               </p>
@@ -202,7 +260,7 @@
               </div>
             </li>
 
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-5.png" alt="Сливочное с брусничным джемом">
               </p>
@@ -214,7 +272,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-6.png" alt="Сливочно-черничное с цельными ягодами черники">
               </p>
@@ -226,7 +284,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-7.png" alt="Сливочно-лимонное с карамельной присыпкой">
               </p>
@@ -238,7 +296,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-8.png" alt="Сливочное с шоколадной стружкой">
               </p>
@@ -251,7 +309,7 @@
               </div>
             </li>
 
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-9.png" alt="Сливочно-ванильное с кусочками шоколада">
               </p>
@@ -263,7 +321,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-10.png" alt="Сливочноe с ментоловым сиропом">
               </p>
@@ -275,7 +333,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-11.png" alt="Сливочное с кусочками черного шоколада">
               </p>
@@ -287,7 +345,7 @@
                 <a class="main-btn view-btn" href="#">Быстрый просмотр</a>
               </div>
             </li>
-            <li class="products-item-hit flag-hit">
+            <li class="products-item-hit">
               <p class="product-img">
                 <img src="img/product-hit-12.png" alt="Сливочное с мятным сиропом">
               </p>

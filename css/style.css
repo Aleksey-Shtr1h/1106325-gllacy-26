@@ -320,11 +320,19 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: start;
-          justify-content: flex-start;
+          justify-content: space-between;
   flex-wrap: wrap;
 
   padding-top: 10px;
 }
+
+.wrap-heder-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 
 .header-logo {
   padding-right: 11px;
@@ -347,7 +355,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   align-self: flex-start;
 
-  margin-right: 358px;
+  /*margin-right: 358px;*/
   padding-top: 15px;
 }
 
@@ -375,6 +383,16 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
 
   border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.nanavigation-user-item--active {
+  background-color: #d07058;
+
+  border-radius: 50px;
+}
+
+.navigation-user-btn--active {
+  border-bottom: none;
 }
 
 /*inner-navigation-menu*/
@@ -479,13 +497,13 @@ input[type="radio"].visually-hidden {
 
           align-items: center;
 
-  /*padding-top: 12px;*/
+  padding-top: 4px;
 }
 
 .header-search {
   position: relative;
-  width: 34px;
-  height: 34px;
+  width: 31px;
+  height: 31px;
   background-color: #9cb2a5;
 
   border-radius: 50%;
@@ -507,8 +525,8 @@ input[type="radio"].visually-hidden {
 .search-icon {
   position: relative;
 
-  top: 9px;
-  left: 9px;
+  top: 7px;
+  left: 7px;
 
   fill: #fff;
 }
@@ -589,10 +607,11 @@ input[type="radio"].visually-hidden {
 
 .wrap-user-btn {
   position: relative;
-  line-height: 0px;
+  /*line-height: 0px;*/
 }
 
-.user-btn {
+.user-btn,
+.basket-btn {
   position: relative;
 
   font-size: 14px;
@@ -607,23 +626,26 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 
   margin-left: 8px;
-  padding: 9px 17px 9px 45px;
+  padding: 7px 17px 7px 45px;
 }
 
-.user-btn-icon {
+.user-btn-icon,
+.basket-btn-icon {
   position: absolute;
-  top: 6px;
-  left: 16px;
+  top: 1px;
+  left: 26px;
 
   fill: #fff;
 }
 
-.user-btn:hover {
+.wrap-user-btn:hover .user-btn,
+.wrap-basket-btn:hover .basket-btn {
   background-color: #f8f7f4;
   color: #323232;
 }
 
-.user-btn:hover .user-btn-icon {
+.wrap-user-btn:hover .user-btn-icon,
+.wrap-basket-btn:hover .basket-btn-icon {
   fill: #323232;
 }
 
@@ -636,7 +658,7 @@ input[type="radio"].visually-hidden {
   top: 100%;
   right: 0px;
 
-  margin-top: 15px;
+  margin-top: 11px;
   padding-top: 17px;
   padding-bottom: 21px;
   padding-left: 18px;
@@ -720,6 +742,161 @@ input[type="radio"].visually-hidden {
 
   color: #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+.wrap-basket-btn {
+  position: relative;
+  /*line-height: 0px;*/
+}
+
+.basket-form {
+  display: none;
+
+  position: absolute;
+
+  width: 540px;
+  top: 100%;
+  right: 0px;
+
+  margin-top: 11px;
+  /*padding-top: 17px;*/
+  padding-bottom: 21px;
+  padding-left: 18px;
+  padding-right: 13px;
+
+  border-radius: 5px;
+
+  background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+  z-index: 4;
+}
+
+.wrap-basket-btn:hover .basket-form {
+  display: block;
+}
+
+.basket-form::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: -15px;
+
+  height: 30px;
+  width: 100%;
+
+  opacity: 0;
+
+  /*background-color: red;*/
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid #cacac7;
+
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.order-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+  /*padding-left: 0px;*/
+}
+
+.delete-item-btn {
+  position: relative;
+
+  background-color: #f8f7f4;
+  border: none;
+
+  cursor: pointer;
+}
+
+.delete-item-icon {
+  position: absolute;
+  top: 25%;
+  left: 0px;
+}
+
+.order-img {
+  width: 33px;
+  height: 33px;
+
+  margin: 0 13px;
+}
+
+.order-item p {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: #323232;
+
+  padding-top: 7px;
+}
+
+.order-text {
+  width: 220px;
+
+  margin-right: 27px;
+}
+
+.weight-calculation-text {
+  margin-right: 27px;
+}
+
+.wrap-total-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.total-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: #323232;
+
+  margin-bottom: 15px;
+}
+
+.order-btn {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+
+  padding: 9px 14px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .header-phone {
   float: right;
