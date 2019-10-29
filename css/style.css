@@ -147,7 +147,10 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden,
 label[for="user-login"],
-label[for="user-password"] {
+label[for="user-password"],
+label[for="modal-user-login"],
+label[for="user-email"],
+label[for="user-text"] {
   position: absolute;
 
   width: 1px;
