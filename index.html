@@ -21,13 +21,13 @@
         <section class="top-header">
           <div class="wrap-heder-menu">
             <h1 class="visually-hidden">Gllacy Shop</h1>
-            <div class="header-logo">
-              <img src="img/logo-gllace.png" alt="logo">
-            </div>
+            <a class="header-logo">
+              <img src="img/logo-gllace.png" alt="logo" width="154" height="64">
+            </a>
             <nav>
               <ul class="navigation-user-list">
                 <li class="navigation-user-item">
-                  <a href="catalog.html" class="navigation-user-btn">
+                  <a href="#" class="navigation-user-btn">
                     Каталог
                   </a>
                   <!-- Выподающее меня -->
@@ -202,7 +202,7 @@
           <ul class="products-list-hit">
             <li class="products-item-hit flag-hit">
               <p class="product-img">
-                <img src="img/product-hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
               </p>
               <p class="product-price">310₽</p>
               <h3 class="product-title">
@@ -214,7 +214,7 @@
             </li>
             <li class="products-item-hit flag-hit">
               <p class="product-img">
-                <img src="img/product-hit-2.png" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/product-hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
               </p>
               <p class="product-price">380₽</p>
               <h3 class="product-title">
@@ -226,7 +226,7 @@
             </li>
             <li class="products-item-hit flag-hit">
               <p class="product-img">
-                <img src="img/product-hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/product-hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
               </p>
               <p class="product-price">355₽</p>
               <h3 class="product-title">
@@ -238,7 +238,7 @@
             </li>
             <li class="products-item-hit flag-hit">
               <p class="product-img">
-                <img src="img/product-hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/product-hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
               </p>
               <p class="product-price">415₽</p>
               <h3 class="product-title">
@@ -284,9 +284,9 @@
             Новости блога
           </h2>
           <article class="blog-new">
-            <p class="blog-new-text">
+            <h3 class="blog-new-text">
               Новое в нашем блоге
-            </p>
+            </h3>
             <a href="#" class="blog-new-link main-link">
               10 способов сервировки
               фруктовых щербетов к
@@ -294,10 +294,14 @@
             </a>
           </article>
           <article class="blog-mailing">
+            <h3 class="visually-hidden">
+              Подписка на нашу рассылку
+            </h3>
             <form action="https://echo.htmlacademy.ru" class="blog-mailing-email">
-              <label for="blog-mailing-text" aria-label="Отправить рассылку">
+              <p aria-label="Отправить рассылку">
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-              </label>
+              </p>
+              <label class="visually-hidden" for="blog-mailing-text">Почта для рассылки</label>
               <input class="main-input" id="blog-mailing-text" type="email" name="blog-mailing-text" placeholder="email@example.com">
               <button class="main-btn mailing-btn" type="submit">
                 Отправить
@@ -335,7 +339,12 @@
             </a>
           </div>
         </div>
-        <button class="map-index-btn" type="button"></button>
+        <div class="map-index-btn">
+          <img src="img/map-index.jpg" alt="Карта" width="1200" height="430">
+        </div>
+
+
+        <!-- <button class="map-index-btn" type="button"></button> -->
       </section>
     </main>
 
@@ -409,6 +418,9 @@
         </div>
 
         <div class="developer-box">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-link">
+            <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="108" height="39">
+          </a>
           <p class="developer-text">
             Сделано в
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="developer-link">

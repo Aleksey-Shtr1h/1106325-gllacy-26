@@ -62,7 +62,8 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-var map_link = document.querySelector('.map-index-btn');
+// var map_link = document.querySelector('.map-index-btn::after');
+
 var map_choice = document.querySelector('.modal-map')
 var map_close = map_choice.querySelector('.modal-close');
 
