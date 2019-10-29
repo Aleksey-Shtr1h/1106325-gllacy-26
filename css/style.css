@@ -471,6 +471,10 @@ label[for="user-password"] {
   border-radius: 0px 0px 5px 5px;
 }
 
+.menu-catalog-item--active {
+  background-color: #d07058;
+}
+
 .menu-catalog-btn {
   display: block;
 
