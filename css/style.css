@@ -70,6 +70,17 @@ p {
 
 .main-link:hover,
 .main-link:active {
+  color: #ffbc9e;
+}
+
+.main-link-box {
+  display: block;
+
+  text-decoration: underline;
+}
+
+.main-link-box:hover,
+.main-link-box:active {
   color: #e84d37;
 }
 
@@ -540,7 +551,12 @@ label[for="user-text"] {
 }
 
 .header-search label {
+  display: block;
+
   cursor: pointer;
+
+  width: 100%;
+  height: 100%;
 }
 
 .search-icon {
@@ -1527,7 +1543,7 @@ label[for="user-text"] {
   fill: #e6ebe9;
 }
 
-.footer-menu {
+.footer-menu-list {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -1543,6 +1559,10 @@ label[for="user-text"] {
   padding-left: 27px;
 
   margin-right: 180px;
+}
+
+.footer-menu-item {
+  padding-bottom: 5px;
 }
 
 .footer-menu-btn-bold {
@@ -1574,7 +1594,7 @@ label[for="user-text"] {
   font-weight: 400;
 }
 
-.footer-menu a {
+.footer-menu-list a {
   min-width: 142px;
 }
 
@@ -1687,7 +1707,7 @@ label[for="user-text"] {
   border: none;
 
   padding-top: 0px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -1703,87 +1723,78 @@ label[for="user-text"] {
   padding-left: 14px;
 }
 
-.sorting-box {
-  position: relative;
-
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 13px;
+.sorting {
+  margin-right: 13px;
 }
 
-.sorting-outer-btn {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 600;
+.select-sort {
+  position: relative;
+
+  color:#fff;
+
+  font-size:16px;
+  line-height:18px;
+  font-weight:500;
 
   color: #fff;
 
+  background-color: #a9b9af;
+  background-image: url(../img/icon-down-dir-white.svg);
+  background-repeat: no-repeat;
+  background-position: 92% 60%;
+
+  padding: 9px 33px 8px 13px;
+
+  border: none;
   border-radius: 50px;
 
-  background-color: #a9b9af;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 13px;
-  padding-right: 50px;
+  outline: none;
 }
 
-.sorting-outer-icon {
-  position: absolute;
-  top: 14px;
-  right: 24px;
-
-  fill: #fff;
-}
-
-.sorting-box:hover .sorting-outer-btn {
-  background-color: #fff;
-  color: #000;
-}
-
-.sorting-box:hover .sorting-outer-icon {
-  fill: #000;
-}
-
-.sorting-list {
-  display: none;
-
-  position: absolute;
-
-  width: 192px;
-  top: 100%;
-  left: 0px;
-
-  padding-left: 0px;
-  padding-right: 0px;
+.select-sort:hover,
+.select-sort:active,
+.select-sort:focus {
+  color:#323232;
 
   background-color: #fff;
-
-  z-index: 4;
+  background-image: url(../img/icon-down-dir-black.svg);
+  background-repeat: no-repeat;
+  background-position: 92% 60%;
 }
 
-.sorting-item--active {
-  background-color: #1e90ff;
-}
-
-.sorting-box:hover .sorting-list {
-  display: block;
-}
-
-.sorting-inner-btn {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-
-  color: #000;
-
-  padding-left: 18px;
+select::-ms-expand {
+    display: none;
 }
 
 /*filter-price*/
 
 .filter-price {
-  margin-right: 10px;
+  margin-right: 12px;
+}
+
+.min-price input,
+.max-price input {
+  width: 26px;
+  /*height: 17px;*/
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+
+  color: #fff;
+
+  border: none;
+
+  background-color: transparent;
+}
+
+.min-price input:focus,
+.max-price input:focus {
+  outline: #2e88e4;
 }
 
 .range-filter {
@@ -1905,8 +1916,8 @@ label[for="user-text"] {
   left: -33px;
   top: -2px;
 
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 28px;
 
   background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
@@ -1928,8 +1939,8 @@ label[for="user-text"] {
   left: -33px;
   top: -2px;
 
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 28px;
 
   background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
@@ -1989,8 +2000,8 @@ label[for="user-text"] {
   left: -35px;
   top: 0;
 
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 28px;
 
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
@@ -2012,8 +2023,8 @@ label[for="user-text"] {
   left: -35px;
   top: 0;
 
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 28px;
 
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;

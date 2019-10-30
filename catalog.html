@@ -101,8 +101,8 @@
                     <div class="login-entry">
                       <button class="entry-btn main-btn" type="submit">Войти</button>
                       <div class="login-help">
-                        <a class="restore main-link" href="#">Забыли пароль?</a>
-                        <a class="new-regestration main-link" href="#">Новая регистрация</a>
+                        <a class="restore main-link-box" href="#">Забыли пароль?</a>
+                        <a class="new-regestration main-link-box" href="#">Новая регистрация</a>
                       </div>
                     </div>
                   </form>
@@ -212,41 +212,26 @@
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="sorting">
               <legend>Сортировка:</legend>
-              <div class="sorting-box">
-                <a href="#" class="sorting-outer-btn">
-                  по популярности
-                </a>
-                <svg class="sorting-outer-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#fff">
-                  <path d="M5.5 10L0 0h11"/>
-                </svg>
-
-                <ul class="sorting-list">
-                  <li class="sorting-item sorting-item--active">
-                    <a href="#" class="sorting-inner-btn">
-                      по популярности
-                    </a>
-                  </li>
-                  <li class="sorting-item">
-                    <a href="#" class="sorting-inner-btn">
-                      сначала недорогие
-                    </a>
-                  </li>
-                  <li class="sorting-item">
-                    <a href="#" class="sorting-inner-btn">
-                      сначала дорогие
-                    </a>
-                  </li>
-                  <li class="sorting-item">
-                    <a href="#" class="sorting-inner-btn">
-                      по жирности
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <select name="sort" class="select-sort">
+                <option value="in-popular">по-популярности</option>
+                <option value="inexpensive-first">сначала недорогие</option>
+                <option value="first-dear">сначала дорогие</option>
+                <option value="in-fat">по-жирности</option>
+              </select>
             </fieldset>
 
             <fieldset class="filter-price">
-              <legend>Цена: 100 руб. – 500 руб.</legend>
+              <legend>
+                <label class="min-price" aria-label="Минимальная цена для фильтра поиска" for="min-price">
+                  Цена:
+                  <input name="min-price" type="text" value="100" id="min-price">
+                </label>
+                <label class="max-price" aria-label="Максимальная цена для фильтра поиска" for="max-price">
+                  руб —
+                  <input name="max-price" type="text" value="500" id="max-price">
+                  руб
+                </label>
+              </legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -587,8 +572,30 @@
             </ul>
           </div>
 
-          <div class="footer-menu">
-            <a href="#" class="footer-menu-btn-bold main-link">
+          <div>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-btn-bold main-link">
+                  Для поставщиков
+                </a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-btn main-link">
+                  Наши документы
+                </a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-btn main-link">
+                  О производстве
+                </a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-btn main-link">
+                  Экологические стандарты
+                </a>
+              </li>
+            </ul>
+            <!-- <a href="#" class="footer-menu-btn-bold main-link">
               Для поставщиков
             </a>
             <a href="#" class="footer-menu-btn main-link">
@@ -599,13 +606,16 @@
             </a>
             <a href="#" class="footer-menu-btn main-link">
               Экологические стандарты
-            </a>
+            </a> -->
           </div>
 
           <div class="developer-box">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-link">
+              <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="108" height="39">
+            </a>
             <p class="developer-text">
               Сделано в
-              <a href="#" class="developer-link">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="developer-link">
                 HTML Academy
               </a>
               © 2019
@@ -616,4 +626,7 @@
       </footer>
     </div>
   </div>
+
+  <script src="js/main.js"></script>
+
 </body>
