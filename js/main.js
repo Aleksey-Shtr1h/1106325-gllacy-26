@@ -1,13 +1,13 @@
-if (document.querySelector('.body-index')) {
-  var write_us_link = document.querySelector('.feedback-btn');
-  var write_us_choice = document.querySelector('.modal-write-us');
+if (document.querySelector(".body-index")) {
+  var write_us_link = document.querySelector(".feedback-btn");
+  var write_us_choice = document.querySelector(".modal-write-us");
 
-  var close_btn_form = write_us_choice.querySelector('.modal-close');
+  var close_btn_form = write_us_choice.querySelector(".modal-close");
 
-  var sel_form_write_us = write_us_choice.querySelector('.form-write-us');
-  var login_input_form = write_us_choice.querySelector('[name=modal-user-login]');
-  var password_input_form = write_us_choice.querySelector('[name=modal-user-email]');
-  var text_input_form = write_us_choice.querySelector('[name=modal-user-text]');
+  var sel_form_write_us = write_us_choice.querySelector(".form-write-us");
+  var login_input_form = write_us_choice.querySelector("[name=modal-user-login]");
+  var password_input_form = write_us_choice.querySelector("[name=modal-user-email]");
+  var text_input_form = write_us_choice.querySelector("[name=modal-user-text]");
 
   var isStorageSupport = true;
   var storage = "";
@@ -19,9 +19,9 @@ catch (err) {
   isStorageSupport = false;
 }
 
-write_us_link.addEventListener('click', function(evt) {
+write_us_link.addEventListener("click", function(evt) {
   evt.preventDefault();
-  write_us_choice.classList.add('modal-show');
+  write_us_choice.classList.add("modal-show");
 
   if (storage) {
     login.value = storage;
@@ -32,18 +32,18 @@ write_us_link.addEventListener('click', function(evt) {
   }
 });
 
-close_btn_form.addEventListener('click', function(evt) {
+close_btn_form.addEventListener("click", function(evt) {
   evt.preventDefault();
-  write_us_choice.classList.remove('modal-show');
-  write_us_choice.classList.remove('modal-error');
+  write_us_choice.classList.remove("modal-show");
+  write_us_choice.classList.remove("modal-error");
 });
 
-sel_form_write_us.addEventListener('submit', function(evt) { //отказ отправлять форму
+sel_form_write_us.addEventListener("submit", function(evt) { //отказ отправлять форму
   if (!login_input_form.value || !password_input_form.value || !text_input_form.value) {
     evt.preventDefault();
-    write_us_choice.classList.remove('modal-error');
+    write_us_choice.classList.remove("modal-error");
     write_us_choice.offsetWidth = write_us_choice.offsetWidth;
-    write_us_choice.classList.add('modal-error');
+    write_us_choice.classList.add("modal-error");
   }
   else {
     if (isStorageSupport) {
@@ -62,8 +62,8 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-var map_choice = document.querySelector('.modal-map')
-var map_close = map_choice.querySelector('.modal-close');
+var map_choice = document.querySelector(".modal-map")
+var map_close = map_choice.querySelector(".modal-close");
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

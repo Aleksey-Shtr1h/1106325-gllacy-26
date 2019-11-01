@@ -39,7 +39,7 @@ p {
   vertical-align: top;
 
   color: #fff;
-  font-weight: 800;
+  font-weight: 700;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
@@ -79,7 +79,7 @@ p {
 .main-input {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 800;
+  font-weight: 700;
 
   color: #000;
 
@@ -133,7 +133,7 @@ p {
 }
 
 body {
-  font-family: 'Roboto','Arial', sans-serif;
+  font-family: "Roboto","Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -224,7 +224,7 @@ label[for="user-text"] {
 
   font-size: 60px;
   line-height: 60px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .main-slider-btn {
@@ -296,7 +296,6 @@ label[for="user-text"] {
 
 .main-btn {
   color: #fff;
-  font-weight: 800;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 
@@ -388,7 +387,7 @@ label[for="user-text"] {
 .navigation-user-btn {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 800;
+  font-weight: 700;
 
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
@@ -483,12 +482,12 @@ label[for="user-text"] {
 }
 
 .new {
-  font-weight: 800;
+  font-weight: 700;
   padding: 4px 0;
 }
 
 .new:before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: 39px;
@@ -748,7 +747,7 @@ label[for="user-text"] {
 .entry-btn {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 800;
+  font-weight: 700;
   color: #fff;
 
   margin-right: 20px;
@@ -909,7 +908,7 @@ label[for="user-text"] {
 .header-phone {
   float: right;
   color: #fff;
-  font-weight: 800;
+  font-weight: 700;
   text-align: right;
 }
 
@@ -973,7 +972,7 @@ label[for="user-text"] {
 
 .banner-title {
   font-size: 35px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 41px;
 
   padding-top: 16px;
@@ -984,7 +983,7 @@ label[for="user-text"] {
 .banner-text {
   width: 535px;
 
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   word-break: break-all;
@@ -1005,7 +1004,7 @@ label[for="user-text"] {
 }
 
 .products-hit {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .products-list-hit {
@@ -1031,11 +1030,11 @@ label[for="user-text"] {
   -webkit-box-pack: start;
           justify-content: flex-start;
 
-  width: 267px;
+  width: 264px;
 
   margin-top: 26px;
-  margin-bottom: 13px;
-  margin-right: 26px;
+  margin-bottom: 11px;
+  margin-right: 30px;
 
   color: #fff;
 }
@@ -1089,7 +1088,7 @@ label[for="user-text"] {
 .product-price {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 600;
+  font-weight: 700;
 
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 
@@ -1272,11 +1271,11 @@ label[for="user-text"] {
 }
 
 .blog-new-link {
-  width: 280px;
+  width: 285px;
 
   font-size: 24px;
   line-height: 30px;
-  font-weight: 800;
+  font-weight: 700;
 
   color: #000;
 }
@@ -1346,10 +1345,23 @@ label[for="user-text"] {
 .map-index {
   position: relative;
 
-  width: 1200px;
-  margin: 0 auto;
-
   margin-bottom: 11px;
+}
+
+.map-interactive {
+  position: absolute;
+
+  height: 430px;
+  width: 100%;
+
+  z-index: 1;
+}
+
+.map-interactive iframe {
+  width: 100%;
+  height: 430px;
+
+  border: 0;
 }
 
 .map-index-btn {
@@ -1390,7 +1402,7 @@ label[for="user-text"] {
 .feedback {
   position: absolute;
   top: 63px;
-  right: 23px;
+  right: 214px;
 
   background-color: #fff;
 
@@ -1399,6 +1411,8 @@ label[for="user-text"] {
   padding: 28px 26px;
 
   color: #000;
+
+  z-index: 2;
 }
 
 .feedback p {
@@ -1449,7 +1463,7 @@ label[for="user-text"] {
 
   font-size: 18px;
   line-height: 24px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
 
   padding: 10px 29px;
@@ -1542,7 +1556,7 @@ label[for="user-text"] {
 
   font-size: 13px;
   line-height: 16px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .footer-menu-btn-bold::before {
@@ -1653,7 +1667,7 @@ label[for="user-text"] {
 .catalog-name {
   font-size: 35px;
   line-height: 41px;
-  font-weight: 800;
+  font-weight: 700;
 
   color: #fff;
 
@@ -1686,7 +1700,7 @@ label[for="user-text"] {
 .filter-form legend {
   font-size: 14px;
   line-height: 16px;
-  font-weight: 600;
+  font-weight: 500;
 
   color: #fff;
 
@@ -1701,11 +1715,11 @@ label[for="user-text"] {
 .select-sort {
   position: relative;
 
-  color:#fff;
+  color: #fff;
 
-  font-size:16px;
-  line-height:18px;
-  font-weight:500;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 
   color: #fff;
 
@@ -1751,7 +1765,7 @@ select::-ms-expand {
 
   font-size: 14px;
   line-height: 16px;
-  font-weight: 600;
+  font-weight: 500;
 
   color: #fff;
 
@@ -2010,7 +2024,7 @@ select::-ms-expand {
 .filter-form button {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 500;
 
   color: #fff;
 
@@ -2047,6 +2061,11 @@ select::-ms-expand {
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
+.pagination-box {
+  margin-top: 69px;
+  margin-bottom: 15px;
+}
+
 .pagination-list {
   display: -webkit-box;
   display: flex;
@@ -2057,8 +2076,6 @@ select::-ms-expand {
           justify-content: flex-end;
   flex-wrap: wrap;
 
-  margin-top: 65px;
-  margin-bottom: 15px;
   padding-bottom: 30px;
 
   border-bottom: 1px solid #a9bbb1;
@@ -2066,7 +2083,7 @@ select::-ms-expand {
 
 .pagination-item {
 
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .pagination-link {
@@ -2075,7 +2092,7 @@ select::-ms-expand {
 
   font-size: 16px;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 500;
 
   width: 27px;
   height: 27px;
@@ -2148,7 +2165,7 @@ select::-ms-expand {
 .write-us-text {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 500;
 
   color: #000;
 
@@ -2260,7 +2277,7 @@ select::-ms-expand {
 .form-write-us textarea {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 800;
+  font-weight: 700;
 
   color: #000;
 
@@ -2442,3 +2459,4 @@ select::-ms-expand {
     transform: translateX(10px);
   }
 }
+
