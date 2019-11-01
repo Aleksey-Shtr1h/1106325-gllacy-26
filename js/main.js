@@ -65,16 +65,6 @@ window.addEventListener("keydown", function (evt) {
 var map_choice = document.querySelector('.modal-map')
 var map_close = map_choice.querySelector('.modal-close');
 
-map_link.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  map_choice.classList.add('modal-show')
-});
-
-map_close.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  map_choice.classList.remove("modal-show");
-});
-
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (map_choice.classList.contains("modal-show")) {
