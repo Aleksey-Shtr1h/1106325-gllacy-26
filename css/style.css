@@ -1889,6 +1889,10 @@ select::-ms-expand {
   padding-top: 3px;
 }
 
+.filter-input:focus + label {
+  color: #000;
+}
+
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
