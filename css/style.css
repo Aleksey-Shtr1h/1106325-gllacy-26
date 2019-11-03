@@ -1348,6 +1348,10 @@ label[for="user-text"] {
   margin-bottom: 11px;
 }
 
+.map-index .container {
+  position: relative;
+}
+
 .map-interactive {
   position: absolute;
 
@@ -1365,6 +1369,8 @@ label[for="user-text"] {
 }
 
 .map-index-btn {
+  position: relative;
+
   width: 1200px;
   margin: 0 auto;
 
@@ -1402,13 +1408,13 @@ label[for="user-text"] {
 .feedback {
   position: absolute;
   top: 63px;
-  right: 214px;
+  right: 0px;
 
   background-color: #fff;
 
   border-radius: 15px;
 
-  padding: 28px 26px;
+  padding: 28px 23px;
 
   color: #000;
 
