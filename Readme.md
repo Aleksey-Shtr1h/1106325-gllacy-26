@@ -2,7 +2,7 @@
 
 * Студент: [Алексей Кузьменя](https://up.htmlacademy.ru/htmlcss/26/user/1106325).
 * Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
-
+* Онлайн версия: https://aleksey-shtr1h.github.io/1106325-gllacy-26/
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
